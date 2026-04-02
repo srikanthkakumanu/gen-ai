@@ -12,6 +12,9 @@ class LLMType(str, Enum):
     GROQ = "GROQ"
     OPENROUTER = "OPENROUTER"
     LLAMA = "LLAMA"
+    OPENAI = "OPENAI"
+
+
 
 
 @dataclass(frozen=True)
@@ -39,6 +42,8 @@ def get_llm_config(llm_type: LLMType) -> LLMConfig:
             return LLMConfig(model="groq-1", uri_key="GROQ_BASE_URL")
         case LLMType.OPENROUTER:
             return LLMConfig(model="openai/gpt-4.1-nano", uri_key="OPENROUTER_BASE_URL")
+        case LLMType.OPENAI:
+            return LLMConfig(model="gpt-4.1-nano", uri_key="OPENAI_BASE_URL")
         case _:
             raise ValueError(f"Unsupported LLM type: {llm_type}")
 
