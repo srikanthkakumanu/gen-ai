@@ -115,3 +115,5 @@ Key Technologies:
 
 - **GANs (Generative Adversarial Networks)&mdash;** A type of neural network used to generate new data. Used in deepfake creation.
 - **Transformer Models &mdash;** Powering LLMs like ChatGPT, Gemini, and Claude.
+
+[AI Map](ai_map.html)
