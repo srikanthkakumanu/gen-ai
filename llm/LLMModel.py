@@ -76,7 +76,7 @@ class LLMModel:
             case LLMType.OPENAI:
                 llm = LLMModel(
                     llm_type=llm_type,
-                    model="gpt-4.1-nano",
+                    model="gpt-4.1-mini",
                     uri_key="OPENAI_BASE_URL",
                     env_key="OPENAI_API_KEY",
                 )
